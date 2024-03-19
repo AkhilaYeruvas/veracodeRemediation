@@ -1,5 +1,5 @@
 1) cipher strength analysis mode testing
-2) CRLF injection:carriage return, line feed
+2) CRLF injection:carriage return, line feed done by the developer
 when data enters from unauthorised application and chages logs and headers cache poisioning. can append falsified log 
 -recommend:apply robust input filtering using data validation routines whn possible,
 3) checking whether crlf sequences in HTTP headers (proper neutralization)
