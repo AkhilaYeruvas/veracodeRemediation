@@ -1,4 +1,4 @@
-1) cipher strength analysis mode testing akhilaaaaa
+1) cipher strength analysis mode testing akhilaaaaaaaaaaaaaaaa
 2) CRLF injection:carriage return, line feed
 when data enters from unauthorised application and chages logs and headers cache poisioning. can append falsified log 
 -recommend:apply robust input filtering using data validation routines whn possible,
