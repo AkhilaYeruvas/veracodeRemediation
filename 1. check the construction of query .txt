@@ -1,0 +1,22 @@
+1. check the construction of query 
+   (usage of prepared statement to avoid sql injection)
+2.centralized data validations
+  (validate user supplied input using positive filters(white lists) 
+3.normalize data before applying the filters
+  (prevents attackers from using alternate encoding schemes to bypass filters)
+4.do not assume that all methods exposed by API will prevent sql injection attacks, most of them contain methods that pass arbitrary queries to db in unsafe manner.
+5.check for Improper neutralization
+5.CRLF(carriage return file feed)
+  check for crlf that enter log file
+6.untrusted input into an HTTP header allows an
+attacker to manipulate the HTTP response rendered by the browser(cache poisioning and cross-site scripting)
+  (validate using centralized data validation routines)
+7.untrusted data into a log file allows an attacker to forge log
+entries or inject malicious content into log files
+  (avoid direct embedding user input into log file)(use of safe logging mecha like OWASP ESAPI logger)
+8.proper management of credentials
+9.Avoid storing passwords in easily accessible locations, no plaintext, avoid hard-coded usernames n passwords
+10.haed-coded credentials->security compromised, acnnot be changed without patching the software
+  (store passwords out of band from application code, follow best practices for protecting credentials stored in locations such as configurations or properties files)
+11.XSS(do not allow any html content in posts, use white list firtering)
+12.
