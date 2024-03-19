@@ -1,0 +1,29 @@
+1) cipher strength analysis mode testing
+2) CRLF injection:carriage return, line feed
+when data enters from unauthorised application and chages logs and headers cache poisioning. can append falsified log 
+-recommend:apply robust input filtering using data validation routines whn possible,
+3) checking whether crlf sequences in HTTP headers (proper neutralization)
+4)doing centralised data validation routines,Filtering user data
+5)testing in different frameworks
+6)proper management of credentials(checking strong passwords /hardcoding passwords in application
+7)trying to decrypting the password(credentials)
+8)checking whether passwords are available in easily accesible locations
+9)checking whether sensitive data is in plain text or not
+10)checking whether they followed best ;ractices for protecting credentials
+11)checking cross-site scriptings(HTML injection)(using whether untrusted is using without validation)
+12)checking whether implemented output filtering to sanitize all output
+13)validating user-supplied input
+14)checking whether user have access to html tags(no html tags are not displaying)
+15)checking cookies
+16)checking whether crypto keys are strong or not
+17)checking crypto keys stored and exposed easily
+18)checking whether crypto algorithm is broken or risky
+19)checking whether URL redirect to untrusted site
+20)checking whether session is invalidating before authenticating a unit
+21)checking whether error messages are revealing any additional data
+22)testing denail of service
+23)testing backdoor attack
+
+
+
+
